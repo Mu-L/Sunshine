@@ -1,6 +1,6 @@
 /**
  * @file src/platform/windows/display_ram.cpp
- * @brief todo
+ * @brief Definitions for handling ram.
  */
 #include "display.h"
 
@@ -370,6 +370,9 @@ namespace platf::dxgi {
     return 0;
   }
 
+  /**
+   * @memberof platf::dxgi::display_ram_t
+   */
   int
   display_ram_t::dummy_img(platf::img_t *img) {
     if (complete_img(img, true)) {
